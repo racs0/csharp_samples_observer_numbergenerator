@@ -32,7 +32,7 @@ Nachdem die gewünschte Anzahl an Zufallszahlen verarbeitet wurde, meldet sich a
 
 ## RangeObserver
 
-Dieser Beobachter wird mit einer unteren Schranke, einer oberen Schranke und der Anzahl der gewünschten Treffer im Bereich per Konstruktor konfiguriert und zählt alle Zufallszahlen, die in diesen Bereich fallen. Wenn dies gewünschte Trefferanzahl erreicht ist, meldet sich der RangeObserver selbstständig von der weiteren Benachrichtigung beim `RandomNumberGenerator` ab.
+Dieser Beobachter wird mit einer unteren Schranke, einer oberen Schranke und der Anzahl der gewünschten Treffer im Bereich per Konstruktor konfiguriert und zählt alle Zufallszahlen, die in diesen Bereich fallen. Wenn die gewünschte Trefferanzahl erreicht ist, meldet sich der RangeObserver selbstständig von der weiteren Benachrichtigung beim `RandomNumberGenerator` ab.
 
 ## QuickTippObserver
 
