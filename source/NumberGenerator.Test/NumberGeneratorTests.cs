@@ -51,6 +51,7 @@ namespace NumberGenerator.Test
 
             //Act
             numberGenerator.Attach(baseObserver);
+            numberGenerator.Attach(baseObserver);
 
             //Assert
             Assert.Fail("InvalidOperationException was expected!");
