@@ -79,6 +79,7 @@ namespace NumberGenerator.Test
             //Arrange
             RandomNumberGenerator numberGenerator = new RandomNumberGenerator();
             BaseObserver baseObserver = new BaseObserver(numberGenerator, 5);
+            numberGenerator.Attach(baseObserver);
 
             //Act
             try
