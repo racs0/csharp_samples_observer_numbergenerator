@@ -41,17 +41,7 @@ namespace NumberGenerator.Logic
         /// <param name="number"></param>
         public virtual void OnNextNumber(int number)
         {
-            CountOfNumbersReceived++;
-
-            // Sobald die Anzahl der max. Beobachtungen (_countOfNumbersToWaitFor) erreicht ist -> Detach()
-            if (CountOfNumbersReceived >= CountOfNumbersToWaitFor)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"   >> {this.GetType().Name}: Received '{CountOfNumbersReceived}' of '{CountOfNumbersToWaitFor}' => I am not interested in new numbers anymore => Detach().");
-                Console.ResetColor();
-                DetachFromNumberGenerator();
-            }
-
+            throw new NotImplementedException();
         }
 
         #endregion
