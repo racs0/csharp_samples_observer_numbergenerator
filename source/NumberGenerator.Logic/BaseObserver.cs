@@ -26,7 +26,13 @@ namespace NumberGenerator.Logic
 
         public BaseObserver(IObservable numberGenerator, int countOfNumbersToWaitFor)
         {
-            throw new NotImplementedException();
+            if (countOfNumbersToWaitFor < 0)
+            {
+                throw new ArgumentException("ArgumentException was expected!");
+            }
+
+            _numberGenerator = numberGenerator;
+            CountOfNumbersToWaitFor = countOfNumbersToWaitFor;
         }
 
         #endregion
